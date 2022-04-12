@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp23
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            try
+            {
+                Console.WriteLine("enter no.");
+                int n=Int32.Parse(Console.ReadLine());
+                Console.WriteLine("enter no.");
+                int n2 = Int32.Parse(Console.ReadLine());
+                int n3 = n / n2;
+                Console.WriteLine(n3);
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                Console.WriteLine(e.StackTrace);
+                Console.WriteLine(e.Source);
+            }
+            Console.ReadLine();
+        }
+    }
+}
